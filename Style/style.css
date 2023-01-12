@@ -4,7 +4,8 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background-image: url(/Assets/R2.jpeg);
+    /* background-image: url(/Assets/R2.jpeg); */
+    background-image: linear-gradient(300deg, #000000, 80%, #ffffff);
     background-size: cover;
 }
 header {
