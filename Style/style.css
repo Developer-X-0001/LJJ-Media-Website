@@ -19,7 +19,13 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23888888' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23666666' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23444444' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23222222' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23000000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23eeeeee' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23dddddd' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23cccccc' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23bbbbbb' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23AAAAAA' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
     background-size: cover, 126%;
 }
-
+body::-webkit-scrollbar {
+    width: 1rem;
+    background-image: linear-gradient(180deg, #ffffff, #000000);
+}
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#000000, #ffffff);
+}
 nav {
     position: sticky;
     top: 0;
