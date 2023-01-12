@@ -2,52 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Style/style.css">
+    <link rel="stylesheet" href="/Style/normalize.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./Style/style.css">
-    <link rel="stylesheet" href="./Style/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LJJ Media</title>
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="./Assets/LJJMediaSquareLogo.jpeg">
+    <title>LLJ Media</title>
 </head>
 <body>
-    <header>
-        <img src="/Assets/LJJMediaLongLogo.jpeg" alt="LJJMediaLongLogo">
-    </header>
+    <nav>
+        <img src="/Assets/LJJMediaLongLogo.png" alt="LJJMediaLongLogo">
+        <div class="links">
+            <a href="#about">About Us</a>
+            <a href="#stats">Analytics</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
     <main>
-        <section class="section-one">
-            <div class="paragraph">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mattis justo. Fusce at elit sit amet nisi condimentum ultricies. Curabitur dapibus ipsum lacus, sit amet malesuada lectus gravida eget. Nulla eu finibus ipsum. Aliquam vestibulum eleifend viverra. Aenean interdum pellentesque sapien, in viverra tellus. Praesent in consectetur quam. Vivamus sed nisi tristique, luctus mi et, blandit velit. Nulla et lectus bibendum risus pharetra placerat. Donec vehicula maximus urna, sed semper quam congue nec. Nam mattis eget augue non aliquet. Integer sed magna laoreet, euismod sem ut, interdum justo.</p>
+        <div class="aboutus" id="about">
+            <h1>About Us</h1>
+            <img src="/Assets/LJJMediaSquareLogo.jpeg" alt="">
+        </div>
+        <div class="divide"></div>
+        <div class="analytics" id="stats">
+            <h1>Analytics</h1>
+            <div class="amounts">
+                <div class="followers">
+                    <h3>Followers</h3>
+                    <h1>86.3K+</h1>
+                </div>
+                <div class="likes">
+                    <h3>Likes</h3>
+                    <h1>1.1M+</h1>
+                </div>
+                <div class="views">
+                    <h3>Views</h3>
+                    <h1>6.8M+</h1>
+                </div>
             </div>
-            <div class="images">
-                <img src="/Assets/LJJMediaSquareLogo.jpeg" alt="LJJMediaSquareLogo">
-            </div>
-        </section>
-        <section class="section-two">
-            <h1 class="section-two-heading">Analytics</h1>
-            <div class="boxes">
-                <section>
-                    <div>
-                        <h3>Followers</h3>
-                        <h1>86.3K+</h1>
+        </div>
+        </div>
+        <div class="divide"></div>
+        <div class="services" id="services">
+            <h1>Services</h1>
+        </div>
+        <div class="divide"></div>
+        <div class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <!-- <div class="contactform">
+                <div class="name">
+                    <div class="firstname">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="" id="firstname" placeholder="John">
                     </div>
-                </section>
-                <section>
-                    <div>
-                        <h3>Views</h3>
-                        <h1>6.8M+</h1>
+                    <div class="lastname">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="" id="lastname" placeholder="Doe">
                     </div>
-                </section>
-                <section>
-                    <div>
-                        <h3>Likes</h3>
-                        <h1>1.1M+</h1>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <section class="section-three">
-            <h1 class="section-three-heading">Services</h1>
-        </section>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="name@domain.com">
+                </div>
+                <div class="message">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your message here..."></textarea>
+                </div>
+                <div class="buttons">
+                    <button>Send Message</button>
+                </div>
+            </div> -->
+        </div>
     </main>
 </body>
 </html>
