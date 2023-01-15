@@ -3,6 +3,8 @@
 :root {
     --color-1: #ffffff;
     --color-2: #000000;
+    --color-3: #838383;
+    --color-4: #9c9c9c;
 }
 html {
     scroll-behavior: smooth;
@@ -16,8 +18,9 @@ body {
     user-select: none;
     transition: all 1s;
     background-color: #FFFFFF;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23888888' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23666666' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23444444' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23222222' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23000000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23eeeeee' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23dddddd' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23cccccc' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23bbbbbb' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23AAAAAA' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: cover, 126%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23333333' points='1600 450 0 450 0 330 1600 330'/%3E%3Cpolygon fill='%23999999' points='1600 600 0 600 0 450 1600 450'/%3E%3Cpolygon fill='%23777777' points='1600 700 0 700 0 550 1600 550'/%3E%3Cpolygon fill='%23555555' points='1600 800 0 800 0 600 1600 600'/%3E%3Cpolygon fill='%23333333' points='1600 900 0 900 0 650 1600 650'/%3E%3C/g%3E%3C/svg%3E"), url(/Assets/background2.png);
+    background-size: cover, 115%;
+    background-repeat: no-repeat;
 }
 body::-webkit-scrollbar {
     width: 1rem;
@@ -27,6 +30,7 @@ body::-webkit-scrollbar-thumb {
     background-image: linear-gradient(#000000, #ffffff);
 }
 nav {
+    z-index: 2;
     position: sticky;
     top: 0;
     display: flex;
@@ -62,17 +66,18 @@ main {
 }
 .aboutus {
     display: flex;
-    height: 50rem;
+    height: fit-content;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
-    padding: 2rem 15rem;
+    padding: 2rem 15rem 0 15rem;
     box-sizing: border-box;
     color: var(--color-2);
 }
 .aboutus h1 {
     font-size: 72px;
+    width: 50%;
     margin: 0;
 }
 .aboutus p {
@@ -85,7 +90,7 @@ main {
 .analytics {
     text-align: center;
     width: 100%;
-    padding: 2rem 15rem;
+    padding: 0 15rem;
     box-sizing: border-box;
     color: var(--color-1);
     display: flex;
@@ -93,8 +98,9 @@ main {
     align-items: center;
 }
 .analytics h1 {
-    font-size: 72px;
+    font-size: 100px;
     margin: 0;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 .amounts {
     margin-top: 2rem;
@@ -106,7 +112,8 @@ main {
 }
 .amounts h3 {
     margin: 0;
-    font-size: 32px;
+    font-size: 40px;
+    text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 1);
 }
 .amounts div {
     height: max-content;
@@ -116,18 +123,66 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    color: var(--color-2);
+    color: var(--color-1);
     border-radius: 1rem;
 }
 .services {
+    background-image: url(/Assets/services.png);
+    background-repeat: no-repeat;
+    filter: grayscale(300%);
+    background-size: cover;
+    background-position-y: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 100%;
     padding: 2rem 15rem;
     box-sizing: border-box;
     color: var(--color-2);
 }
-.services h1 {
+.services-heading {
     font-size: 72px;
+}
+.services-options h1 {
+    font-size: 72px;
+    margin: 0;
+}
+.services-options {
+    display: flex;
+    justify-content: space-between;
+    width: 52rem;
+}
+.services-options h1 {
+    font-size: 52px;
+}
+.services-options p {
+    margin: 0.5rem 0;
+}
+.services-options-left img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+.services-options-left div {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    width: 25rem;
+    margin: 0;
+}
+.services-options-right img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+.services-options-right div {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    width: 25rem;
     margin: 0;
 }
 .contact {
@@ -145,7 +200,7 @@ main {
     font-size: 72px;
     margin: 0;
 }
-/* .contact .contactform {
+.contact .contactform {
     height: 25rem;
     display: flex;
     justify-content: space-evenly;
@@ -237,4 +292,68 @@ main {
     color: var(--color-2);
     background-color: var(--color-1);
     transition: color 0.1s, background-color 0.1s, border 0.1s;
-} */
+}
+@media screen and (max-width:900px) and (min-width:720px) {
+    nav {
+        width: 100%;
+    }
+    body {
+        background-repeat: no-repeat, no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23333333' points='1600 450 0 450 0 240 1600 240'/%3E%3Cpolygon fill='%23999999' points='1600 600 0 600 0 450 1600 450'/%3E%3Cpolygon fill='%23777777' points='1600 700 0 700 0 510 1600 510'/%3E%3Cpolygon fill='%23333333' points='1600 1100 0 1100 0 560 1600 560'/%3E%3C/g%3E%3C/svg%3E"), url(/Assets/background2.png);
+    }
+    .aboutus {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        margin: 0;
+    }
+    .aboutus h1 {
+        font-size: 48px;
+    }
+    .divide {
+        display: none;
+        visibility: hidden;
+    }
+    .aboutus img {
+        width: 256px;
+    }
+    .analytics {
+        padding: 1rem 0;
+        margin: 0;
+    }
+    .analytics h1 {
+        font-size: 64px;
+    }
+    .analytics h3 {
+        font-size: 32px;
+    }
+    .amounts {
+        padding: 0;
+        margin: 0;
+        height: 10rem;
+    }
+    .services {
+        padding: 1rem 0 2rem 0;
+    }
+    .services-heading {
+        margin: 1rem;
+    }
+    .services-options h1 {
+        font-size: 48px;
+    }
+    .contact {
+        height: fit-content;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact h1 {
+        margin-bottom: 5rem;
+    }
+    .contactform div {
+        margin-bottom: 1rem;
+    }
+    .name {
+        display: flex;
+    }
+}
