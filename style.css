@@ -131,3 +131,11 @@ nav a {
     color: white;
     margin: 1rem 0;
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+}
