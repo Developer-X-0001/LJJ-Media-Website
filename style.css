@@ -232,75 +232,43 @@ button:hover {
 @media screen and (max-width: 412px) {
     nav {
         position: relative;
-        width: auto;
-        display: flex;
-        padding: 0 1rem;
         justify-content: center;
         align-items: center;
         background-color: white;
         height: 4rem;
-        top: 0;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
-    }
-    nav img {
-        height: 3rem;
     }
     nav .navlinks {
         display: none;
         visibility: hidden;
     }
-    nav a {
-        color: black;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 2rem;
-    }
     .aboutus {
         height: 16.125rem;
-        width: auto;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-image: url(/Assets/R2.jpeg);
-        background-repeat: no-repeat;
         background-size: contain;
     }
     .aboutus-heading {
         width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
     }
     .aboutus-heading img {
         display: none;
         visibility: hidden;
     }
     .aboutus h2 {
-        color: white;
         font-size: 12px;
-        margin: 0;
-        text-align: center;
-        text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
     }
     .aboutus h1 {
-        margin: 0;
-        color: white;
         font-size: 40px;
-        text-align: center;
-        text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
     }
     .aboutus-amounts {
         display: flex;
+        text-align: center;
         flex-direction: row;
-        width: 10rem;
+        width: 100%;
         justify-content: space-evenly;
     }
     .aboutus-amounts h1 {
         font-size: 25px;
     }
     .divider {
-        background-color: #3E3E3E;
         height: 0.8rem;
         width: auto;
     }
@@ -315,13 +283,11 @@ button:hover {
     }
     .services h1 {
         font-size: 32px;
-        color: white;
         margin-top: 0;
         margin-bottom: 0.5rem;
     }
     .services h2 {
         font-size: 20px;
-        color: white;
         margin: 0;
     }
     .services-listing {
@@ -334,26 +300,15 @@ button:hover {
     .services-listing-left {
         width: 13.75rem;
     }
-    .services-listing-left div {
-        display: flex;
-        align-items: center;
-    }
     .services-listing p {
         font-weight: 700;
         font-size: 12px;
-        color: white;
     }
     .services-listing i {
-        color: #D1D1D1;
         font-size: 20px;
-        margin-right: 1rem;
     }
     .services-listing-right {
         width: 13.75rem;
-    }
-    .services-listing-right div {
-        display: flex;
-        align-items: center;
     }
     .contact {
         display: flex;
