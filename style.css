@@ -267,6 +267,7 @@ button:hover {
         background-size: contain;
     }
     .aboutus-heading {
+        width: fit-content;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
